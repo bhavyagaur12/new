@@ -18,7 +18,7 @@ public class Student {
 	private String name;
 	
 //	@Size(min=2, max=10,message="size must be greater than {min} and less than {max}" )
-	@Size(min=3,max=15)
+	@Size(min=10,max=20)
 	private String hobby;
 	
 //	@Size(min=2, max=4 )
