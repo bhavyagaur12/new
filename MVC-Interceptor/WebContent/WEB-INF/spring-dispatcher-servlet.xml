@@ -13,6 +13,12 @@
   
     <context:component-scan base-package="com.spring" />
     <mvc:annotation-driven/>
+    
+    <mvc:interceptors>
+    <bean class="com.spring.Week" />
+    </mvc:interceptors>
+    
+    
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="prefix">
     <value>/WEB-INF/</value>

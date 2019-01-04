@@ -14,8 +14,9 @@ public class Week extends HandlerInterceptorAdapter {
 		Calendar c=Calendar.getInstance();
 		
 		int day=c.get(c.DAY_OF_WEEK);
+		System.out.println(day);
 		if(day==5){
-			response.getWriter().write("Do not Work on Sunday");
+			response.getWriter().write("Do not Work on friday");
 			return false;
 		}
 		else
