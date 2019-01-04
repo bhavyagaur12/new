@@ -1,36 +1,38 @@
 <%@taglib prefix="f" uri="http://www.springframework.org/tags/form"%>
+<%@taglib prefix="sp" uri="http://www.springframework.org/tags"%>
 <html>
 <head>
 <title>AdmissionForm</title>
 </head>
 <body>
-	<h1 style="text-align: center;">WELCOME</h1>
+	<h1 style="text-align: center;"><sp:message code="label.welcome"></sp:message> </h1>
+	<h3><a href="/MVC-MultipleLanguages2/AdmissionForm?language=en">English</a>  |  <a href="/MVC-MultipleLanguages2/AdmissionForm?language=fr">French</a> </h3>
 
 	<f:errors path="student.*" />
 
-	<form action="/MVC-Interceptor/admission"
+	<form action="/MVC-MultipleLanguages2/admission"
 		method="post">
 		<br>
-		<h3>Please fill out the below form</h3>
+		<h3> <sp:message code="label.FillForm"></sp:message> </h3>
 		<table border="3">
 			<tr>
-				<td>Student Name</td>
+				<td><sp:message code="label.name"></sp:message> </td>
 				<td><input type="text" name="name"></td>
 			</tr>
 			<tr>
-				<td>Student Hobbies</td>
+				<td><sp:message code="label.hobby"></sp:message></td>
 				<td><input type="text" name="hobby"></td>
 			</tr>
 			<tr>
-				<td>Student Mobile Number</td>
+				<td><sp:message code="label.mobile"></sp:message></td>
 				<td><input type="text" name="mobile"></td>
 			</tr>
 			<tr>
-				<td>Student DOB</td>
+				<td><sp:message code="label.dob"></sp:message></td>
 				<td><input type="text" name="dob"></td>
 			</tr>
 			<tr>
-				<td>Student Skills</td>
+				<td><sp:message code="label.skills"></sp:message></td>
 				<td><select name="skills" multiple="multiple">
 						<option value="java">JAVA</option>
 						<option value="net">.NET</option>
@@ -40,22 +42,22 @@
 			</tr>
 		</table>
 		<br>
-		<h4>Student Address</h4>
+		<h4><sp:message code="label.address"></sp:message> </h4>
 		<table>
 			<tr>
-				<td>City</td>
+				<td><sp:message code="label.city"></sp:message></td>
 				<td><input type="text" name="address.city"></td>
 			</tr>
 			<tr>
-				<td>Country</td>
+				<td><sp:message code="label.country"></sp:message></td>
 				<td><input type="text" name="address.country"></td>
 			</tr>
 			<tr>
-				<td>PinCode</td>
+				<td><sp:message code="label.pincode"></sp:message></td>
 				<td><input type="text" name="address.pincode"></td>
 			</tr>
 			<tr>
-				<td>Street</td>
+				<td><sp:message code="label.street"></sp:message></td>
 				<td><input type="text" name="address.street"></td>
 			</tr>
 		</table>
