@@ -6,11 +6,11 @@
 </head>
 <body>
 	<h1 style="text-align: center;"><sp:message code="label.welcome"></sp:message> </h1>
-	<h3><a href="/MVC-MultipleLanguages2/AdmissionForm?language=en">English</a>  |  <a href="/MVC-MultipleLanguages2/AdmissionForm?language=fr">French</a> </h3>
-
+<!-- 	<h3><a href="/MVC-MultipleLanguages/AdmissionForm?language=en">English</a>  |  <a href="/MVC-MultipleLanguages/AdmissionForm?language=fr">French</a> </h3>
+ -->
 	<f:errors path="student.*" />
 
-	<form action="/MVC-MultipleLanguages2/admission"
+	<form action="/MVC-ExceptionHandling2/admission"
 		method="post">
 		<br>
 		<h3> <sp:message code="label.FillForm"></sp:message> </h3>

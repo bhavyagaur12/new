@@ -22,9 +22,9 @@
     
    </mvc:interceptor>
     
-    <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" >
+<!--     <bean class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor" >
     <property name="paramName" value="language" />
-   </bean>
+   </bean> -->
     
     
    
@@ -45,8 +45,8 @@
     <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
      	<property name="basename"  value="/WEB-INF/message" />
     </bean>
-    
-    <bean id="LocaleResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" />
+    <!-- 
+   <bean id="LocaleResolver" class="org.springframework.web.servlet.i18n.CookieLocaleResolver" /> -->
 
     
     

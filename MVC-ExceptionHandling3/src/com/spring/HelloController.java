@@ -1,6 +1,7 @@
 package com.spring;
 
 
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -10,6 +11,7 @@ import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,10 +34,11 @@ public class HelloController {
 
 	@RequestMapping(value="/AdmissionForm",method=RequestMethod.GET)
 	public ModelAndView handle(){
-		ModelAndView a=new ModelAndView("AdmissionForm");
-		return a;
+//		throw new ArithmeticException();
+		throw new NullPointerException();
+//		ModelAndView a=new ModelAndView("AdmissionForm");
+	//	return a;
 	}
-	
 	
 //	@RequestMapping(value="/AdmissionSuccess",method=RequestMethod.POST)
 //	public ModelAndView postMethod(@RequestParam("name") String names,@RequestParam("hobby") String hobbys){
